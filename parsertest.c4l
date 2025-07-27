@@ -1,0 +1,4 @@
+fn add(a | num, b | num) -> num {
+	let x | num <- a * b;
+	ret x;
+}
