@@ -136,7 +136,7 @@ impl Parser<'_> {
                         },
                         _ => return Err("Expected type identifier after assignment symbol in function signature".to_string())
                     };
-                    args.push((name.clone(), type_annotation));
+                    args.push((label.clone(), type_annotation));
                     
                     match self.expect(Token::RParen) {
                         Ok(_) => break,
@@ -513,19 +513,3 @@ pub(crate) enum ProgramObject {
     }
     //TODO: ADD STRUCTS AND ENUMS (THAT SOUNDS HARD)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,13 @@
 fn add(a | num, b | num) -> num {
-	let x | num <- a * b;
+	let x | num <- a + b;
 	ret x;
+}
+
+fn sub(a | num, b | num) -> num {
+	ret a - b;
+}
+
+
+fn mul(a | num, b | num) -> num {
+	ret a * b;
 }
